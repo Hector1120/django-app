@@ -24,3 +24,4 @@ class Person(models.Model):
     created_at =  models.DateTimeField(default=datetime.datetime.now())
     updated_at= models.DateTimeField(default=datetime.datetime.now())
     deleted_at =  models.DateTimeField(null= True, blank= True)
+    id_user =  models.ForeignKey(User, on_delete = models.CASCADE, blank = False, null=False, default =1)
