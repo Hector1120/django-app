@@ -101,8 +101,4 @@ while True:
             else:
                 print("No Comets found.")
     print("--------------------------------------")           
-<<<<<<< HEAD
     input("Press enter to continue...")
-=======
-    input("Press enter to continue...")
->>>>>>> c9d64d29d4c0f1645dbf442dbc20734cb048aaa7
