@@ -7,3 +7,5 @@ def index(request):
 
 def list_persons(request):
     return HttpResponse("Here you find a list of people")
+def create_persons(request):
+    return HttpResponse("Create Persons")
