@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #0000FF; /* Fondo azul */
+            color: white; /* Texto blanco */
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Clientes</h1>
+    <ul> 
+        {% for cliente in clientes %}
+        <li> 
+            <strong>Nombre:</strong> {{ cliente.nombre }} <br>
+            <strong>Apellido:</strong> {{ cliente.apellido }} <br>
+            <strong>Correo electrónico:</strong> {{ cliente.email }} <br>
+            <strong>Celular:</strong> {{ cliente.celular }} <br>
+            <!-- Puedes agregar más campos aquí si lo necesitas -->
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

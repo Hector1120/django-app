@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #0000FF; /* Fondo azul */
+            color: white; /* Texto blanco */
+        }
+    </style>
+</head>
+<body>
+    <h1>Listado de Transacciones</h1>
+    <ul> 
+        {% for transaccion in transacciones %}
+        <li> 
+            <strong>ID Cliente Producto:</strong> {{ transaccion.id_cliente_producto }} <br>
+            <strong>Monto:</strong> {{ transaccion.monto }} <br>
+            <strong>Tipo de Transacción:</strong> {{ transaccion.tipo_transaccion }} <br>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
