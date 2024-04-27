@@ -35,7 +35,8 @@ class Tipo_Transaccion(DateTimeModel):
 class Transaccion(DateTimeModel):
     id_cliente_producto = models.ForeignKey(Cliente_Producto, on_delete = models.CASCADE, blank = False, null=False, default =1)
     monto = models.CharField(max_length=20)
-    tipo_transaccion = models.CharField(max_length=10)
+    tipo_transaccion = models.ForeignKey(Tipo_Transaccion, on_delete = models.CASCADE, blank = False, null=False, default =1)
+
     
     
 
