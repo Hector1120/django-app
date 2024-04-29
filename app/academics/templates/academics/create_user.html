@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create user</title>
+    <!-- Agrega tus etiquetas meta, enlaces a hojas de estilo, scripts, etc. aquí -->
+</head>
+<body>
+    <h1> Sign up form </h1>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit"> Register</button>
+    </form>
+</body>
+</html>
